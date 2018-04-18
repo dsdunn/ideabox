@@ -38,7 +38,7 @@ function updateText(e) {
   } else if (e.target.classList.contains('card-title')) {
     idea.title = text;
   }
-  localStorage.setItem(key,JSON.stringify(idea));
+  store(key,idea)
 }
 
 function filterCards() {
